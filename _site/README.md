@@ -1,3 +1,0 @@
-# netgale-site
-
-NetGALE website
