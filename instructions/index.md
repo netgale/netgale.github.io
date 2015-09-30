@@ -3,75 +3,78 @@ layout: page
 title: Instructions
 ---
 ## Requirements
-- The offline CPU version only requires Java 8 and 4 GB of RAM.
-- The offline GPU version requires opencl etc.
-- The online GPU version requires an API key from ...
+
+* The offline CPU version only requires Java 8 and 4 GB of RAM.
+* The offline GPU version requires opencl etc.
+* The online GPU version requires an API key from ...
 
 ## Getting the plugin
-- Download the [plugin](/downloads)
 
-- Download and unpack the [example networks](/downloads/example_networks.zip)
+Download the [plugin](/downloads)
+
+Download and unpack the [example networks](/downloads/example_networks.zip)
 
 ## Setup for Cytoscape 3
-- Open "App Manager" from the menu bar:
 
-![]( /img/tutorial/menubarappmanager.png )
+Open "App Manager" from the menu bar:
 
-- Choose "Install from file"
+![](/img/tutorial/menubarappmanager.png){: .img-responsive }
 
-![]( /img/tutorial/appmanager.png )
+Choose "Install from file"
 
-- NETGALE should now be loaded and visible in the "Control Panel":
+![](/img/tutorial/appmanager.png){: .img-responsive }
 
-![]( /img/tutorial/controlpanel.png )
+NETGALE should now be loaded and visible in the "Control Panel":
+
+![](/img/tutorial/controlpanel.png){: .img-responsive }
 
 ## Loading the example networks
 
-- Press the "Import Network From File" button in the menu bar:
+Press the "Import Network From File" button in the menu bar:
 
-![]( /img/tutorial/iconbar.png )
+![](/img/tutorial/iconbar.png){: .img-responsive }
 
-- Choose the first example network:
+Choose the first example network:
 
-![]( /img/tutorial/networksfilemanager.png )
+![](/img/tutorial/networksfilemanager.png){: .img-responsive }
 
-- Ensure that "Network Collection" is set to "Create new network collection"
+Ensure that "Network Collection" is set to "Create new network collection"
 
-![]( /img/tutorial/importnetwork.png )
+![](/img/tutorial/importnetwork.png){: .img-responsive }
 
-- Repeat this for the 2 other network files, each time ensuring "Create new network collection" is set as "Network Collection"
+Repeat this for the 2 other network files, each time ensuring "Create new network collection" is set as "Network Collection".
 
-- You can then layout each of the networks using the "Apply Prefered Layout"-button
+You can then layout each of the networks using the "Apply Prefered Layout" button
 
-![]( /img/tutorial/prefuse.png )
+![](/img/tutorial/prefuse.png){: .img-responsive }
 
-- Cytoscape should now look something like this:
+Cytoscape should now look something like this:
 
-![]( /img/tutorial/networksloadedoverview.png )
+![](/img/tutorial/networksloadedoverview.png){: .img-responsive }
 
 ## Basic Usage
 
-- Start by doing a simple local cpu alignment of the 3 networks by pressing the start button:
+Start by doing a simple local cpu alignment of the 3 networks by pressing the start button:
 
-![]( /img/tutorial/startbasic.png )
+![](/img/tutorial/startbasic.png){: .img-responsive }
 
-- A progress bar will show up:
+A progress bar will show up:
 
-![]( /img/tutorial/progressbar.png )
+![](/img/tutorial/progressbar.png){: .img-responsive }
 
-- The result is a consensus network showing largest connected common subgraph found
+The result is a consensus network showing largest connected common subgraph found
 
-![]( /img/tutorial/consensus.png )
+![](/img/tutorial/consensus.png){: .img-responsive }
 
-- Repeat the result with exceptions by typing 1 in the "exceptions" field
+Repeat the result with exceptions by typing 1 in the "exceptions" field
 
-![]( /img/tutorial/exceptions.png )
+![](/img/tutorial/exceptions.png){: .img-responsive }
 
 ## Advanced Usage
 
 ### Similarity file
 
-- An external similarity file can be loaded. This is used improve the solution in a non-topological direction. Please note that the similarities will be normalized to the range [0,1] 
+An external similarity file can be loaded. This is used improve the solution in a non-topological direction. Please note that the similarities will be normalized to the range [0,1] 
 
 Factor
 : The weight of the similarity information.
@@ -82,7 +85,7 @@ Minimum
 Maximum
 : Maximum value to use from the file for normalization. If none is chosen, the maximum value in the file will be used.
 
-![]( /img/tutorial/similaritytab.png )
+![](/img/tutorial/similaritytab.png){: .img-responsive }
 
 ### Parameters
 
@@ -98,4 +101,4 @@ Beta
 Evaporation rate
 : Determines the speed of pheromone evaporation. If a path is seldom visited its pheromone level will decrease. A higher value increases convergence.
 
-![]( /img/tutorial/parameterstab.png )
+![](/img/tutorial/parameterstab.png){: .img-responsive }
