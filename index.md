@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-<div class="jumbotron">
+<div class="jumbotron home-jumbotron">
   <h1>NetGALE 0.1</h1>
   <p>Multiple network alignment tool</p>
   <p><a class="btn btn-primary btn-lg" href="/download" role="button">Download</a></p>
