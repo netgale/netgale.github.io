@@ -14,7 +14,8 @@ navigation:
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>{{ page.title }} | NetGALE</title>
+		{% assign url = page.url | remove:'index.html' %}
+		<title>{% if url != "/" %}{{ page.title }} | {% endif %}NetGALE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="/css/bootstrap-cosmo.min.css">
 		<!--[if lt IE 9]>
@@ -38,7 +39,7 @@ navigation:
 				</div>
 				<div class="collapse navbar-collapse" id="netgale-navbar">
 					<ul class="nav navbar-nav">
-						{% assign url = page.url | remove:'/index.html' %}
+						{% assign url = page.url | remove:'index.html' %}
 						{% for link in page.navigation %}
 						<li {% if url == link.url %}class="active"{% endif %}>
 							<a href="{{ link.url }}">{{ link.text }}</a>
@@ -50,9 +51,12 @@ navigation:
 		</nav>
 
 		<div class="container">
+			{% assign url = page.url | remove:'index.html' %}
+			{% if url != "/" %}
 			<div id="banner" class="page-header">
 				<h1>{{ page.title }}</h1>
 			</div>
+			{% endif %}
 
 			{{ content }}
 
