@@ -4,15 +4,24 @@ title: Instructions
 ---
 ## Requirements
 
-* The offline CPU version only requires Java 8 and 4 GB of RAM.
-* The offline GPU version requires opencl etc.
-* The online GPU version requires an API key from ...
+### CPU version
+
+The CPU version requires [Java 8](https://java.com/en/download/) to be installed
+and at least 4 GB of RAM available.
+
+### GPU version
+
+The GPU version requires a working OpenCL installation.
+
+* **Windows**: If OpenCL is not provided with your GPU drivers,
+  download it from your GPU vendor's website.
+* **Mac OS X**: OpenCL is provided with your operating system.
+* **GNU/Linux**: Install OpenCL through your package manager.
 
 ## Getting the plugin
 
-Download the [plugin](/downloads)
-
-Download and unpack the [example networks](/downloads/example_networks.zip)
+* Download the [Cytoscape plugin](/download).
+* Download and unpack the [example networks](/files/example_networks.zip).
 
 ## Setup for Cytoscape 3
 
