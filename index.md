@@ -1,18 +1,19 @@
 ---
 layout: page
-title: NETGALE
+title: Home
 ---
+
 <div class="jumbotron">
-  <h1>NETGALE 0.1</h1>
+  <h1>NetGALE 0.1</h1>
   <p>Multiple Inexact Network Aligner</p>
-  <p><a class="btn btn-primary btn-lg" href="/downloads" role="button">Get</a></p>
+  <p><a class="btn btn-primary btn-lg" href="/downloads" role="button">Download</a></p>
 </div>
 
 # Overview
-Finds the largest connected common subgraph using graphlets, aco and magic.
 
+NetGALE is a global multiple network alignment tool.
 
-## Features
-- Multiple Networks
-- Parallelized CPU & GPU implementations
-- External similiary support
+* Aligns multiple real-world networks.
+* Parallelized CPU & GPU implementations for high performance.
+* Support for external similarity measures such as bitscore and e-values.
+* Easy-to-use Cytoscape interface to quickly get you started.
